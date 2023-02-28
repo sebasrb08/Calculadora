@@ -1,14 +1,18 @@
-num4=document.getElementById('num1')
-num3=document.getElementById('num2')
 
+num2=0
 function mostrar(){
     document.getElementById('display').innerText=resultado
-   
+   num2=parseInt(num1.value)
 }
 function operador(operando){
+    num=num1.value
     switch(operando){
         case '+':
-            resultado =parseInt(num1.value)+parseInt(num2.value)
+            if(num==num1.value){
+                num1.value=''
+            }
+      
+            resultado =parseInt(num)+parseInt(num2)
             simbolo.innerText='+'
     }
 }
