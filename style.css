@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+}
+.contenedor{
+    width: 30%;
+    height: 50%;
+    border: 1px solid;
+    padding: 15px;
+    background-color: rgb(114, 248, 197);
+
+}
+.resultado{
+    width: 100%;
+    height: 12%;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.valores{
+    padding-top:20px ;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.valores input{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    
+    font-size: 20px;
+}
+.filas{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+
+}
+.file-1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.file-2{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.file-3{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.file-4{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+button{
+    height: 65px;
+    width: 65px;
+    margin-top:10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(114, 248, 197);
+}
+
