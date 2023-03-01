@@ -1,34 +1,64 @@
 
-num2=0
+num=[]
+num2=[]
+num3=[]
+num4=[]
 function mostrar(){
+
+    if(simbolo.value=='+'){
+        num[1]=num1.value
+        resultado =parseInt(num[0])+parseInt(num[1])
+    }
+    else if(simbolo.value=='-'){
+        num2[1]=num1.value
+        resultado =parseInt(num2[0])- parseInt(num2[1])
+ 
+    }
+    else if(simbolo.value=='*'){
+        num3[1]=num1.value
+        resultado =parseInt(num3[0])*parseInt(num3[1])
+ 
+    }else if(simbolo.value=='/'){
+        num4[1]=num1.value
+        resultado =parseInt(num4[0])/parseInt(num4[1])
+ 
+    }
     document.getElementById('display').innerText=resultado
-   num2=parseInt(num1.value)
+
 }
 function operador(operando){
-    num=num1.value
     switch(operando){
         case '+':
-            if(num==num1.value){
+            num[0]=num1.value
+            if(num[0]==num1.value){
                 num1.value=''
             }
-      
-            resultado =parseInt(num)+parseInt(num2)
-            simbolo.innerText='+'
+            simbolo.value='+'
+            
     }
 }
 function operador2(operando2){
     switch(operando2){
         case '-':
-            resultado=parseInt(num1.value)-parseInt(num2.value)
-            simbolo.innerText='-'
+            num2[0]=num1.value
+            if(num2[0]==num1.value){
+                num1.value=''
+            }
+            simbolo.value='-'
+            
 
     }
 }
 function operador3(operando3){
     switch(operando3){
         case '*':
-            resultado=parseInt(num1.value)*parseInt(num2.value)
-            simbolo.innerText='*'
+            num3[0]=num1.value
+            if(num3[0]==num1.value){
+                num1.value=''
+            }
+            
+            simbolo.value='*'
+
 
     }
 
@@ -36,14 +66,17 @@ function operador3(operando3){
 function operador4(operando4){
     switch(operando4){
         case '/':
-            resultado=parseInt(num1.value)/parseInt(num2.value)
-            simbolo.innerText='/'
+            num4[0]=num1.value
+            if(num4[0]==num1.value){
+                num1.value=''
+            }           
+            simbolo.value='/'
+
 
         }
 }
 function borrar(){
     num1.value=''
     num2.value=''
-    simbolo.innerText=''
     display.innerText=''
 }
