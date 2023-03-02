@@ -17,7 +17,7 @@ body{
     height: 50%;
     border: 1px solid;
     padding: 15px;
-    background-color: rgb(114, 248, 197);
+    background-color: rgb(57, 59, 60);
 
 }
 .resultado{
@@ -84,6 +84,6 @@ button{
     margin-top:10px;
     border-radius: 5px;
     font-size: 20px;
-    background-color: rgb(114, 248, 197);
+    background-color: rgb(102, 126, 167);
 }
 
