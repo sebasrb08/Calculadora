@@ -1,6 +1,7 @@
 
 num=[]
 num2=[]
+let cont2=0
 for(let i=0;i<=9;i++){
     document.getElementById('btn_'+ i).addEventListener('click',(boton)=>mostrar2(boton.target));
 
@@ -37,20 +38,24 @@ function mostrar3(teclas){
 }
 
 function mostrar(){
-
+  
     if(simbolo.value=='+'){
         resultado =parseInt(num[0])+parseInt(num1)
-        
+        cont2++
     }
     else if(simbolo.value=='-'){
         resultado =parseInt(num[1])- parseInt(num1)
+        cont2++
     }
     else if(simbolo.value=='*'){
-    
         resultado =parseInt(num[2])*parseInt(num1)
+        cont2++
+
  
     }else if(simbolo.value=='/'){
         resultado =parseInt(num[3])/parseInt(num1)
+        cont2++
+
  
     }
    
@@ -64,6 +69,9 @@ function operador(operando){
             num[0]=num1
             display.innerText=''
             simbolo.value='+'
+            if (cont2>=1){
+                num[0]=num[4]
+            }
            
     }
 }
@@ -73,7 +81,9 @@ function operador2(operando2){
             num[1]=num1
             display.innerText=''
             simbolo.value='-'
-            
+            if (cont2>=1){
+                num[1]=num[4]
+            }
 
     }
 }
@@ -83,6 +93,9 @@ function operador3(operando3){
             num[2]=num1
             display.innerText=''
             simbolo.value='*'
+            if (cont2>=1){
+                num[2]=num[4]
+            }
     }
 
 }
@@ -92,6 +105,9 @@ function operador4(operando4){
             num[3]=num1
             display.innerText=''
             simbolo.value='/'
+            if (cont2>=1){
+                num[3]=num[4]
+            }
         }
 }
 function borrar(){

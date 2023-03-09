@@ -13,7 +13,7 @@ body{
   align-items: center;
 }
 .contenedor{
-    width: 30%;
+    width: 20%;
     height: 50%;
     border: 1px solid;
     padding: 15px;
@@ -51,36 +51,45 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    margin-top: 30px;
+   
    
 
 }
 .file-1{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     
 }
 .file-2{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     
 
 }
 .file-3{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     
 
 }
 .file-4{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     
 
 }
 button{
-    height: 65px;
-    width: 65px;
+    height: 100%;
+    width: 90%;
     margin-top:10px;
     border-radius: 5px;
     font-size: 20px;
